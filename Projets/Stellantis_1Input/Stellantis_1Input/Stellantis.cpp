@@ -2,7 +2,6 @@
 // programme commence et se termine à cet endroit.
 //
 
-#include "LoadTestData.h"
 #include "ModelPredictor.h"
 #include "PhysiologicalModel.h"
 #include "PressureModel.h"

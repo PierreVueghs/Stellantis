@@ -1,5 +1,4 @@
 #include "ModelPredictor.h"
-#include "LoadTestData.h"
 #include "PressureModel.h"
 
 #include <algorithm>
@@ -47,8 +46,8 @@ int ModelPredictor::ExportResultsInCSV(bool theHasFileName,
                                         const std::vector<double>& theCost) const {
   //// Get index of highest probability class
     double aMinValue = theCost[0];// ->Get(0, 0);
-    size_t minIndex(0);
-    for (size_t jj(1); jj < 5; ++jj) {
+    int minIndex(0);
+    for (int jj(1); jj < 5; ++jj) {
       if (theCost[jj] < aMinValue) {
         aMinValue = theCost[jj];
         minIndex = jj;
