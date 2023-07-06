@@ -6,4 +6,4 @@
 #define STELLANTISDDL_API __declspec(dllimport)
 #endif
 
-int ComputeLevelOfDrowsiness(double* parameters, int nbParameters);
+extern "C" STELLANTISDDL_API int ComputeLevelOfDrowsiness(double* parameters, int nbParameters);
